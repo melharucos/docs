@@ -72,6 +72,11 @@ const config = {
             label: 'Вики',
           },
           {
+            href: 'https://karta.subserver.ru',
+            label: 'Карта',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/melharucos/docs',
             label: 'GitHub',
             position: 'right',
