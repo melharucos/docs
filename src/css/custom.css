@@ -28,3 +28,43 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+.tooltip-container {
+  position: relative;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.tooltip-box {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  white-space: normal;
+  max-width: 800px;
+  width: max-content;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.tooltip-box-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip-dark {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+.tooltip-light {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
